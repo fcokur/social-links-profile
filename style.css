@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "inter-bold";
+  src: url("/assets/fonts/static/Inter-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter-regular";
+  src: url("/assets/fonts/static/Inter-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green: #c4f82a;
+  --white: #ffffff;
+  --inter-bold: "inter-bold", sans-serif;
+  --inter-regular: "inter-regular", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--inter-bold);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+body {
+  background-color: var(--grey-900);
+  color: var(--white);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile__inner-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__main-section {
+  background-color: var(--grey-800);
+  max-width: 384px;
+  width: 100%;
+  min-height: 611px;
+}
+
+.profile__picture {
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+  width: 88px;
+  height: 88px;
+  margin-top: 40px;
+}
+
+.profile__name {
+  font-size: 1.5em;
+}
+
+.profile__location {
+  color: var(--green);
+  font-family: var(--inter-regular);
+  font-size: 0.875em;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+}
+
+.profile__description {
+  margin-bottom: 1.5em;
+  font-family: var(--inter-regular);
+}
+
+.profile__link a {
+  color: var(--white);
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.profile__link {
+  background-color: var(--grey-700);
+  padding: 8px 12px;
+  width: 304px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  transition: background-color 0.3s;
+}
+
+.profile__link:hover {
+  background-color: var(--green);
+}
